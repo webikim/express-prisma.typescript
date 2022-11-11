@@ -1,0 +1,37 @@
+### user create
+POST http://localhost:3030/api/user 
+Content-Type: application/json
+
+{
+    "username": "test"
+}
+
+### user get
+GET http://localhost:3030/api/user/test
+
+### user delete
+DELETE http://localhost:3030/api/user/test
+
+### signin
+POST http://localhost:3030/api/user/signin
+Content-Type: application/json
+
+{
+    "username": "test"
+}
+
+### post create
+POST http://localhost:3030/api/post
+Content-Type: application/json
+
+{
+    "title": "first post",
+    "post": "the content",
+    "user_id": 3
+}
+
+### get post of usename
+GET http://localhost:3030/api/post/user/test
+
+### delete post
+DELETE http://localhost:3030/api/post/1
